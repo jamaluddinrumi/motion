@@ -1,9 +1,9 @@
 <template>
   <ul
-    style="width: fit-content; text-align: left;list-style: none;margin-bottom: 5rem;"
+    style="width: fit-content; text-align: left;list-style: none;margin-bottom: 5rem; padding-left:1rem;"
   >
     <li>
-      <router-link to="/"><b>Home</b></router-link>
+      <router-link to="/"><b>Halaman Depan</b></router-link>
     </li>
     <li>
       <router-link to="/benang"><b>Benang</b></router-link>
