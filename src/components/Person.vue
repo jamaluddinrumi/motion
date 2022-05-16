@@ -363,18 +363,7 @@ export default defineComponent({
       />
     </svg>
 
-    <p>
-      Illustration from
-      <a
-        href="https://blush.design/fr/collections/pebble-people"
-        target="_blank"
-        >Pebble People</a
-      >
-      by
-      <a href="https://blush.design/fr/artists/deivid-saenz" target="_blank"
-        >Deivd Saenz</a
-      >
-    </p>
+    
   </div>
 </template>
 

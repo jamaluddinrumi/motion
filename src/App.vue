@@ -1,25 +1,16 @@
 <template>
-  <Person />
+  <ul style="width: fit-content; text-align: left;list-style: none;">
+    <li><router-link to="/benang">benang</router-link></li>
+    <li><router-link to="/speedometer">speedometer</router-link></li>
+    <li><router-link to="/kipas-mask">kipas-mask</router-link></li>
+  </ul>
+  <router-view></router-view>
 </template>
-
-<script>
-import { defineComponent } from "vue";
-import Person from "./components/Person.vue";
-
-export default defineComponent({
-  components: {
-    Person,
-  },
-});
-</script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
