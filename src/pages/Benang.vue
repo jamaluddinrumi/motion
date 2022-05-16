@@ -29,17 +29,19 @@ export default defineComponent({
     refs.forEach((ref, index) => {
       const { variant } = useMotion(ref, {
         initial: {
-          y: 100,
+          x: -100,
           opacity: 0,
         },
         enter: {
+          x: 0,
           y: 0,
           opacity: 1,
           transition: {
             type: "spring",
-            stiffness: 350,
+            stiffness: 400,
             damping: 20,
             delay: index * 50,
+            ease: "easeIn",
             onComplete: () => {
               variant.value = "levitate";
             },
@@ -83,7 +85,8 @@ export default defineComponent({
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="500px"
+   width="210px"
+   height="297px"
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
