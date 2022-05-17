@@ -8,6 +8,9 @@ import App from "./App.vue";
 import Benang from "./pages/Benang.vue";
 import Kipas from "./pages/Kipas.vue";
 import Speedometer from "./pages/Speedometer.vue";
+import CssBenang from "./pages/css/Benang.vue";
+import CssSpeedometer from "./pages/css/Speedometer.vue";
+import CssKipas from "./pages/css/Kipas.vue";
 
 // 2. Define some routes
 // Each route should map to a component.
@@ -16,6 +19,9 @@ const routes = [
   { path: "/benang", component: Benang },
   { path: "/kipas-mask", component: Kipas },
   { path: "/speedometer", component: Speedometer },
+  { path: "/css/benang", component: CssBenang },
+  { path: "/css/speedometer", component: CssSpeedometer },
+  { path: "/css/kipas-mask", component: CssKipas },
 ];
 
 const Router = createRouter({
